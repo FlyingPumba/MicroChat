@@ -1,0 +1,5 @@
+./openshift
+./node_modules
+./npm_global_module_list
+./package.json
+./deplist.txt
