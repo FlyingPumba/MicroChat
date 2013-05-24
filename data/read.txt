@@ -1,0 +1,11 @@
+newbieworld -> Proyecto con fines didácticos.
+
+	Objetivos: 
+
+		Redondear conceptos fundamentales en el uso de herramientas para el maquetado como Sass y Compass.
+
+		Mejorar el rendimiento de las aplicaciones a través del uso de buenas prácticas.
+
+		Afianzar conocimientos en crossbrowsing.
+
+Proyecto personal de uso libre.

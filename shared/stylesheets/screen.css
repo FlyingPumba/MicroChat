@@ -1,0 +1,61 @@
+/* line 17, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+/* line 22, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html { line-height: 1; }
+
+/* line 24, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul { list-style: none; }
+
+/* line 26, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* line 28, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+/* line 30, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote { quotes: none; }
+/* line 103, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+/* line 32, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img { border: none; }
+
+/* line 116, ../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+
+/* line 84, ../sass/screen.scss */
+.width-max, #header, #header .extradata, #header .presentation, #header .menubar { width: 100%; }
+
+/* line 90, ../sass/screen.scss */
+.height-max, html, body, .container { height: 100%; }
+
+/* line 102, ../sass/screen.scss */
+body { background-color: #2d2d16; font-family: Verdana, Arial, "sans-serif"; font-size: 14px; }
+
+/* line 114, ../sass/screen.scss */
+#header { background-color: #2d2d16; min-height: auto; position: fixed; top: 0; left: 0; }
+/* line 125, ../sass/screen.scss */
+#header .extradata { background-color: #3161d7; min-height: 25px; }
+/* line 134, ../sass/screen.scss */
+#header .presentation { background-color: #e6005c; min-height: 150px; margin-bottom: 15px; }
+/* line 143, ../sass/screen.scss */
+#header .presentation .headertitle { font-size: 70px; min-height: 70px; padding-top: 15px; float: none; margin: 0 auto; }
+/* line 156, ../sass/screen.scss */
+#header .menubar { background-color: #3366ff; min-height: 50px; margin-bottom: 15px; }
+
+/* line 169, ../sass/screen.scss */
+#main { background-color: none; min-height: auto; margin-top: 230px; }
+/* line 176, ../sass/screen.scss */
+#main .news { background-color: #3366ff; min-height: 300px; }
+/* line 183, ../sass/screen.scss */
+#main .info { background-color: #588203; min-height: 300px; }
+/* line 190, ../sass/screen.scss */
+#main .articles { background-color: #a05000; min-height: 500px; margin-top: 15px; }
+
+/* line 201, ../sass/screen.scss */
+#footer { background-color: none; min-height: auto; margin-top: 15px; margin-bottom: 15px; }
+/* line 209, ../sass/screen.scss */
+#footer .legal { background-color: #3161d7; min-height: 15px; padding: 5px; text-align: center; font-size: 15px; border-radius: 0 0 10px 10px; }
+/* line 221, ../sass/screen.scss */
+#footer .pagetree { background-color: #2d2d16; min-height: 160px; }
