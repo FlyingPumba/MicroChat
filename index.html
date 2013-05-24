@@ -1,59 +1,117 @@
 <!DOCTYPE html>
+
 <html>
-  <head>
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <title>Micro Chat</title>
-  </head>
+<head>
 
-  <body>
-    <div id="content"></div>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-    <script src="/socket.io/socket.io.js"></script>
-    <script>
-	var socket = io.connect('10.1.0.20');
-	socket.on('connect', function(){
-    		console.log('connected');
- 	 });
-	socket.on('newMsg', function(data){
-		console.log('Receiving message by ', data.nickname, ' : ', data.message);
-		var chat = document.getElementById("chat");
-		chat.value += data.nickname +": "+data.message +"\n";
-	});
+	<title>newbieworld - Un lugar por donde empezar</title>
 
-	function sendMessage(){
-		var nick = document.getElementById("txtNickname").value;
-		var inputtxt  = document.getElementById("msg");
-		var msg = inputtxt.value;
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="shared/javascripts/frameworks/bootstrap/js/bootstrap.min.js"></script>
 
-	        var data = {nickname: nick, message: msg};
-		console.log('sending message :', msg);
-		inputtxt.value = "";
-		
-		var chat = document.getElementById("chat");
-		chat.value += nick +": "+ msg +"\n";
-		socket.emit('sendMsg', data);
-		return false;
-	}
-	function enterPressed(e){
-		if(e.keyCode == 13)
-		{
-			console.log('Enter pressed');
-			sendMessage();
-			
-			document.getElementById("msg").value = "";
-			return false;
-		}
-		else
-			return true;
-	}
-   </script>
-<table>
-   <form onSubmit="return sendMessage()">
-	<tr><td>Nickname:</td><td> <input type='text' id='txtNickname' value="Anonimo" /></br></br></td></tr>
-	<tr><td>Chat:</td><td> <textarea id="chat" rows="15"></textarea></br></td></tr>
-	<tr><td>Mensaje:</td><td><textarea id="msg" onkeypress="enterPressed(event)"></textarea> <input type="submit" value="Enviar"></td></tr>
-   </form>
-</table>
+	<link rel="stylesheet" type="text/css" href="shared/javascripts/frameworks/bootstrap/css/bootstrap.min.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="shared/stylesheets/screen.css" />
+
+	<script type="text/javascript">
+
+		$( function() {
+
+			$('#sessionDataModal').modal( { 
+
+				'backdrop': 'static',
+				'keyboard': false
+
+			 } );
+
+		} );
+
+	</script>
+
+</head>
+<body>
+
+	<div id="sessionDataModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+	  <div class="modal-header">
+
+	    <h3 id="myModalLabel">Microchat - Sala única.</h3>
+	    <h2>Hola! Por favor para ingresar agregá tu nombre =)</h2>
+
+	  </div>
+
+	  <div class="modal-body">
+
+	    <input type="text" id="name" />
+
+	  </div>
+
+	  <div class="modal-footer">
+
+	    <button class="btn btn-primary">Entrar!</button>
+
+	  </div>
+
+	</div>
+
+	<div id="header">
+
+		<!--<div class="span12 extradata">
+
+		</div>-->
+
+		<div class="presentation">
+
+			<div class="span12 headertitle">
+
+				newbieworld - chat application
+
+			</div>
+
+		</div>
+
+		<div class="menubar">
+
+			<ul class="bar"></ul>
+
+		</div>
+
+	</div> <!-- fin #header -->
+
+	<div class="container" >
+
+
+		<div class="row" id="main">
+
+			<div class="span8 news">
+
+			</div>
+
+			<div class="span4 info">
+
+			</div>
+
+			<div class="span12 articles">
+
+			</div>
+
+		</div> <!-- fin #main -->
+
+		<div class="row" id="footer">
+
+			<div class="span12 pagetree">
+			</div>
+
+			<div class="span12 muted legal">
+
+					Front: Luis García; Back: Ivan Arcuschin. - 2013
+
+			</div>
+
+		</div>
+
+	</div> <!-- fin .container -->
+
 </body>
 </html>
